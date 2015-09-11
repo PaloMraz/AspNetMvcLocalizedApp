@@ -1,0 +1,13 @@
+﻿@model List<SelectListItem>
+
+@{
+  ViewBag.Title = @Strings.Common_ChooseLanguage;
+}
+
+<h2>@Strings.Common_ChooseLanguage</h2>
+
+@using (Html.BeginForm())
+{
+  @Html.DropDownList("selectedCulture", this.Model)
+  <button type="submit">@Strings.Common_Submit</button>
+}

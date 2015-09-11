@@ -1,0 +1,19 @@
+﻿@{
+  ViewBag.Title = "Index";
+}
+
+<h2>@Strings.Common_TodayIs: @DateTime.Today.ToLongDateString()</h2>
+
+<div>
+  @Strings.Person_FirstName
+</div>
+<div>
+  @Strings.Person_LastName
+</div>
+<div>
+  @Strings.Person_Age
+</div>
+
+<div>
+  @Html.ActionLink(@Strings.Common_ChooseLanguage, "ChooseCulture")
+</div>
